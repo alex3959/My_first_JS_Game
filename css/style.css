@@ -1,0 +1,178 @@
+
+body{
+    background-color: purple;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+.hide{
+    display: none;
+}
+
+.game-wrapper{
+    min-width: 760px;
+    max-width: 760px;
+    min-height: 500px;
+    max-height: 500px;
+    border: 2px solid navy;
+    margin: 100px auto;
+    background-color: #ffffff;
+}
+
+
+/* welcome page */
+.welcom-wrap{
+    position: relative;
+    height: 500px;
+}
+
+.name-title{
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.welcom-title{
+    font-size: 35px;
+    color: #333;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #000;
+}
+
+.title{
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.gamer-name{
+    font-size: 20px;
+    padding: 3px;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+.item{
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.start-button{
+    position: absolute;
+    height: 50px;
+    width: 115px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    right: 10px;
+    bottom: 20px;
+    font-size: 25px;
+}
+
+.start-button:hover{
+    box-shadow: 0 0 15px #333;
+}
+
+.start-button:active{
+    box-shadow: none;
+}
+
+.time-wrap{
+    display: flex;
+    justify-content: center;
+}
+
+.time-wrap h1{
+    font-size: 20px;
+    margin-right: 15px;
+    line-height: 2;
+}
+.set-time{
+    padding: 3px;
+    width: 100px;
+    font-size: 20px;
+}
+
+/* start-wrap page */
+
+.start-wrap{
+    position: relative;
+    height: 500px;
+    background-image: url(../images/start-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grass-item{
+    background-image: url(../images/house.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 200;
+}
+
+#first-grass{
+    left: 100px;
+    top: 142px;
+}
+
+#second-grass{
+    right: 100px;
+    top: 142px;
+}
+
+#third-grass{
+    left: 320px;
+    top: 210px;
+}
+
+#fourth-grass{
+    left: 100px;
+    bottom: 40px;
+}
+
+#fifth-grass{
+    right: 100px;
+    bottom: 40px;
+}
+
+.start-game__title-score{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 35px 5px;
+    border-bottom: 2px solid saddlebrown;
+}
+
+/* end-wrap page */
+
+.end-wrap{
+    height: 500px;
+    position: relative;
+}
+
+.result-wrap{
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+}
+
+.restart{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 25px;
+    width: 150px;
+    height: 50px;
+}

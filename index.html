@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>DRACONWAR</title>
+</head>
+<body>
+    
+
+    <div class="game-wrapper">
+        <div class="welcom-wrap">
+            <h1 class="welcom-title">Добро пожаловать</h1>
+            <div class="name-title">
+                <h1 class="title">Имя игрока:</h1>
+                <input type="text" class="gamer-name" id="name" placeholder="Please enter your name">
+            </div>
+            <div class="item">
+                <img src="images/Dracon-icon.png" height="80px" width="80px" alt="Dracon-icon">
+                <img src="images/house.png" alt="Dracon-icon">
+            </div>
+            <input class="start-button" type="button" value="Start">
+            <div class="time-wrap">
+                <h1>Установите время:</h1>
+                <input class="set-time" type="number" min="5" step="1" value="5">
+            </div>
+        </div>
+
+        <div class="start-wrap hide">
+            <div class="grass-item" id="first-grass"></div>
+            <div class="grass-item" id="second-grass"></div>
+            <div class="grass-item" id="third-grass"></div>
+            <div class="grass-item" id="fourth-grass"></div>
+            <div class="grass-item" id="fifth-grass"></div>
+            <div class="start-game__title-score">
+                <h1 style="display: block;">Имя: <span id="gamer-name"></span></h1>
+                <h1 style="display: block;">Время: <span id="game-time"></span></h1>
+            </div>
+        </div>
+
+
+        <div class="end-wrap hide">
+            <h1 class="result-wrap">Ваш результат: <span class="result"></span></h1>
+            <input class="restart" type="button" value="Restart">
+        </div>
+    </div>
+
+
+    <script src="js/js.js"></script>
+</body>
+</html>
